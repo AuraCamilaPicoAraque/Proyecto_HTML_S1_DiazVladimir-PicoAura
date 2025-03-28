@@ -4,10 +4,10 @@ El proyecto consiste en la continuación del desarrollo de un Aplicativo Web par
 
 #
 
+
 Tabla de contenido
-|-|-|-|
 |Índice|Título|Información|
+|-|-|-|
 |1|Index.html| Codigo principal para el proyecto|
 |2|Style.css| Diseño de la pagina
 |3|Img| Imagenes utilizadas en la pagina|
-
