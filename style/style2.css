@@ -1,0 +1,45 @@
+html , body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* FUENTES DE LA PAGINA WEB */
+
+
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.otf) format(truetype);
+
+}
+
+@font-face {
+    font-family: "MyriadPro-REGULAR";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format(truetype);
+
+}
+
+
+/* FONDOS DE LAS PRIMERAS TRANSICIONES DE LAS PAGINAS 1,2,3,4,6 */
+
+body {
+    background: url('../img/fondo.png');
+    background-color: black;
+    background-repeat: no-repeat;
+
+    background-size: 100% 135%;
+    background-position: 60% 32%;
+
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+/*_-------------------------------------------------------------_*/
+
+
