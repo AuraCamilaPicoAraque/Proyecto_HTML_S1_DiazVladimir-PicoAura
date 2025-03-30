@@ -34,13 +34,46 @@ body {
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;                                                         
 
     overflow: hidden;
+}       
 
+    .vector {
+    position: fixed;
+
+    top: 35%;
+    left: 44%;
+    width: 150px;
+    height: 150px;
+
+    opacity: 0;
+    animation: blink 2s ease-in-out 1 forwards;
+    animation-delay: 1.8s;
 }
 
+
+
 /*_-------------------------------------------------------------_*/
+
+/* ANIMACION DE APARECER Y DESVANECER */
+
+
+@keyframes blink {
+
+    0%  { opacity: 0;}
+    50% { opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+@keyframes blink2 {
+    0% { opacity: 0; transform: scale(0.8); }
+    70% { opacity: 1; transform: scale(1); }
+    80% { opacity: 1; transform: scale(1); }
+    90% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.9);}
+}                                                          
 
 
 /* 1- SECCION ----- PANEL PRINCIPAL - INGRESO */
@@ -68,13 +101,12 @@ body {
 
     overflow: auto;
 
-    animation: blink2 1s ease-in-out forwards;
-    animation-delay: 3s;
+    animation: blink2 2s ease-in-out forwards;
 }
 
 /* Imagen del logo */
 
-.logo {
+.seccion2__logo {
     width: 18%;
     height: 18%;
     margin-top: 0;
@@ -84,8 +116,7 @@ body {
 
 /* -- TEXTOS DE BIENVENIDA  ---- */
 
-
-.texto1 {
+.seccion2__texto1 {
     margin-top: 1%;
 
     font-family: "MyriadPro-REGULAR";
@@ -95,7 +126,7 @@ body {
     text-align: center;
 }
 
-.texto2 {
+.seccion2__texto2 {
     margin-top: 1%;
 
     font-family: "MyriadPro-REGULAR";
@@ -106,7 +137,7 @@ body {
 }
 
 
-.texto3 {
+.seccion2__texto3 {
     margin-top: 1%;
 
     font-family: "MyriadPro-REGULAR";
@@ -118,4 +149,134 @@ body {
     color: #707070;
 
 
+}
+
+
+/*_-------------------------------------------------------------_*/
+
+/*_-------------------------------------------------------------_*/
+
+/*_-------------------------------------------------------------_*/
+
+
+
+/* 3- SECCION ----- PANEL PRINCIPAL - OPCIONES , AGREGAR REFRESCAR , ELIMINAR , REPORTAR , AYUDA , CONFIGURACION , NOTIFICACION , FOTO , ETC  */
+
+
+.seccion3_PanelPrincipal {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex; 
+
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+/* SECION OPCIONES PARTE SUPERIOR */
+/*_-------------------------------------------------------------_*/
+
+/* ESPACIO DONDE ESTA LAS OPCIONES <DIV>  */
+.seccion3__opciones {
+
+    border-bottom: 2px solid #7070705e;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+
+/* IMAGENES DE LAS OPCIONES */
+
+.seccion3__añadir ,.seccion3__refrescar ,.seccion3__eliminar ,.seccion3__reportar ,.seccion3__ayuda {
+
+    width: 36%;
+    height: 36%;
+    margin-left: 2%;
+
+}
+
+/*_-------------------------------------------------------------_*/
+
+/* TEXTOS DE LAS OPCIONES */
+
+.seccion3_textoAñadir , .seccion3_textoRefrescar , .seccion3_textoEliminar , .seccion3_textoReportar , .seccion3_textoAyuda {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.1vw;
+    margin-left: -3%;
+}
+
+/*_-------------------------------------------------------------_*/
+
+/*  CONFIGURACIONES DE LAS IMAGENES DE LAS OPCIONES */
+
+.seccion3__logo {
+    margin-left: 10%;
+    height: 2vw;
+    
+}
+
+.seccion3__reportar {
+    margin-left: 10%;
+}
+
+/* configuracion notificaciones y foto */
+
+.seccion3__configuracion {
+    margin-left: 5%;
+}
+
+.seccion3__notificacion {
+    margin-left: -0.5%;
+}
+
+.seccion3__configuracion , .seccion3__notificacion {
+    width: 10%;
+    height: 28%;
+}
+
+.seccion3__foto {
+    width: 10%;
+    height: 80%;
+
+    margin-left: 0.5%;
+    margin-right: 4%;
+}
+
+
+
+
+
+/*_-------------------------------------------------------------_*/
+
+
+.seccion3__PanelIndicadores {
+    margin-top: 5%;
+
+    display: flex;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
