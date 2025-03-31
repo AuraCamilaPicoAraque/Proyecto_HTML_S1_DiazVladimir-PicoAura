@@ -80,7 +80,6 @@ body {
 .seccion1_login {
 
     background-color: white;
-    box-shadow: 0 4px 10px rgba(233, 233, 233, 0.2);
 
     display: flex;
 
@@ -93,7 +92,7 @@ body {
     width: 44%;
     height: 80%;
     
-    border-radius: 36px;
+    border-radius: 4vw;
 
     opacity: 0;
 
@@ -109,6 +108,7 @@ body {
     width: 16%;
     height: 16%;
     margin-top: -6%;
+    margin-bottom: 1%;
 }
 
 
@@ -120,7 +120,7 @@ body {
     margin-top: 1%;
 
     font-family: MyriadPro-REGULAR;
-    font-size: 23px;
+    font-size: 2vw;
 
     margin-top: 1%;
     text-align: center;
@@ -129,9 +129,10 @@ body {
 
 .seccion1__texto2 {
     font-family: MyriadPro-Light;
-    font-size: 12px;
+    font-size: 0.9vw;
 
     margin-top: -1.9%;
+    margin-bottom: 3%;
 
     color: #707070;
 }
@@ -141,7 +142,7 @@ body {
 .seccion1__textoU {
 
     font-family: MyriadPro-Light;
-    font-size: 15px;
+    font-size: 1.1vw;
     font-weight:lighter;
 
     margin-top: -1%;
@@ -156,7 +157,7 @@ body {
 .seccion1__textoC {
 
     font-family: MyriadPro-Light;
-    font-size: 15px;
+    font-size: 1.1vw;
     font-weight:lighter;
 
     margin-top: 2%;
@@ -171,7 +172,7 @@ body {
 .seccion1__texto3 {
 
     font-family: MyriadPro-Light;
-    font-size: 10px;
+    font-size: 0.75vw;
     font-weight:lighter;
 
 }
@@ -185,11 +186,11 @@ body {
 /* --- BLOQUE USUARIO ---- */
 .seccion1__Usuario input {
 
-    width: 420px;
-    height: 32px;
+    width: 31vw;
+    height: 2.31vw;
 
-    border-radius: 20px;
-    border: 1px solid #707070b4;
+    border-radius: 1vw;
+    border: 0.1vw solid #707070b4;
 
     margin-top: -6%;
     margin-left: 1%;  
@@ -198,11 +199,11 @@ body {
 /* --- BLOQUES DE CONTRASEÑA ---- */
 .seccion1__Contra input{
 
-    width: 420px;
-    height: 32px;
+    width: 31vw;
+    height: 2.31vw;
 
-    border-radius: 20px;
-    border: 1px solid #707070b4;
+    border-radius: 1vw;
+    border: 0.1vw solid #707070b4;
 
     margin-top: -4%;
     margin-left: 1%;  
@@ -214,10 +215,10 @@ body {
 
     background-color: rgba(255, 102, 0, 0.911);
 
-    width: 210px;
-    height: 45px;
+    width: 15vw;
+    height: 3.4vw;
 
-    border-radius: 70px;
+    border-radius: 2vw;
 
     margin-top: 5%;
     margin-bottom: 3%;
@@ -229,7 +230,7 @@ body {
 .seccion1__IngrePanel p {
     color: white;
     text-align: center;
-    margin: 12px;
+    margin: 1vw;
 
     font-family: MyriadPro-Light;
 
@@ -247,7 +248,8 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
+        
+    font-size: 1vw;
 }
 
 
