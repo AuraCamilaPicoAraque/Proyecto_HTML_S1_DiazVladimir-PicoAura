@@ -171,7 +171,7 @@ body {
     background-color: white;
     display: flex; 
 
-
+    border-radius: 5px;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
     animation-delay: 3s;
@@ -191,11 +191,10 @@ body {
 /* ESPACIO DONDE ESTA LAS OPCIONES <DIV>  */
 .seccion3__opciones {
 
-    border-bottom: 2px solid #7070705e;
+    border-bottom: 1.9px solid #5e5d5d8b;
 
     position: fixed;
-    top: 0;
-    left: 0;
+
     height: 8%;
     width: 100%;
 
@@ -203,6 +202,8 @@ body {
     flex-direction: row;
     justify-content: flex-start; 
     align-items: center;
+
+    overflow: hidden;
 }
 
 
@@ -223,7 +224,7 @@ body {
 .seccion3_textoAñadir , .seccion3_textoRefrescar , .seccion3_textoEliminar , .seccion3_textoReportar , .seccion3_textoAyuda {
     font-family: "MyriadPro-REGULAR" ;
     font-size: 1.1vw;
-    margin-left: -3%;
+    margin-left: -4.2%;
 }
 
 /*_-------------------------------------------------------------_*/
@@ -270,13 +271,77 @@ body {
 /*_-------------------------------------------------------------_*/
 
 
-.seccion3__PanelIndicadores {
-    margin-top: 5%;
+.seccion3__segundacapa__PanelIndicadores {
+    margin-top: 4.5%;
+
+    width: 100%;
 
     display: flex;
+    position: relative;
 
     flex-direction: column;
-    display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
+
+    overflow: auto;
+
+}
+
+.seccion3__segundacapa__texto1 {
+
+    margin-top: 0.5%;
+
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.7vw;
+    letter-spacing: 0.1%;
+}
+
+.seccion3__segundacapa__texto2 {
+    font-family: "MyriadPro-Light" ;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.736);
+    margin-top: -0.5%;
+}
+
+
+
+.seccion3__segundacapa__informacionPanel {
+
+    display: flex;
+    position: fixed;
+    justify-content:space-around;
+    flex-direction: row;
+
+    width: 100%;
+    overflow: auto;    
+
+    margin-top: 7%;
+
+}
+
+.seccion3__segundacapa__informacionPanel p {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1vw;
+}
+
+
+.seccion3__segundacapa__FechadeInicio , .seccion3__segundacapa__FechadeTerminaci , .seccion3__segundacapa__Formula , .seccion3__segundacapa__Frecuenci , .seccion3__segundacapa__Cumplimiento {
+    margin-left: -31vw;
+} 
+
+.seccion3__segundacapa__indicador {
+    margin-left: -7vw;
+}
+
+.seccion3__segundacapa__Descripcion {
+    margin-left: -27vw;
+}
+
+.seccion3__segundacapa__Categoria {
+    margin-left: -28vw;
+}
+
+.seccion3__segundacapa__Area {
+    margin-left: -29vw;
 }

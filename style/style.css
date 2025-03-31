@@ -49,8 +49,7 @@ body {
     width: 150px;
     height: 150px;
     
-    animation: blink 1.5s ease-in-out 2 forwards;
-    animation-delay: 3s;
+    animation: blink 1.6s ease-in-out 2 forwards;
 }
 
 
