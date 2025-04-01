@@ -3,6 +3,7 @@ html , body {
     overflow: hidden;
 }
 
+
 /* FUENTES DE LA PAGINA WEB */
 
 
@@ -170,9 +171,10 @@ body {
     height: 100%;
     background-color: white;
     display: flex; 
+    flex-direction: column;
 
-    border-radius: 5px;
-    opacity: 0;
+    border-radius: 1%;
+    opacity: 1;
     animation: fadeIn 1s ease-in-out forwards;
     animation-delay: 3s;
 }
@@ -274,7 +276,7 @@ body {
 .seccion3__segundacapa__PanelIndicadores {
     margin-top: 4.5%;
 
-    width: 100%;
+    width: 103vw;
 
     display: flex;
     position: relative;
@@ -309,21 +311,19 @@ body {
 .seccion3__segundacapa__informacionPanel {
 
     display: flex;
-    position: fixed;
-    justify-content:space-evenly;
-    flex-direction: row;
+    justify-content: space-evenly;
 
-    width: 100%;
-    overflow: auto;    
-
-    margin-top: 7%;
-    margin-left: -13vw;
-
+    position: relative;
+    top: 2vh;
+    left: -5vw;
+    width: 101vw;
+    
 }
 
 .seccion3__segundacapa__informacionPanel p {
     font-family: "MyriadPro-REGULAR" ;
     font-size: 1vw;
+    
 }
 
 
@@ -349,6 +349,9 @@ body {
 }
 
 
+.cajas {
+    margin-left: 4vw;
+}
 
 
 /*  CAJA ITEMS PARA LAS ESTAS DE OS EJEMPLOS */
@@ -356,11 +359,9 @@ body {
 
 .seccion3__segundacapa__cajaitems {
     
-    margin-top: 5.2%;
-    margin-left: -8%;
-
-    width: 81%;
-    height: 10%;
+    width: 80vw;
+    height: 8vh;
+    
 
     border-radius: 1.5vw;
     border: 0.1vw solid black;
@@ -378,11 +379,8 @@ body {
 
 .seccion3__segundacapa__cajaitems1 {    
   
-    margin-top: 2%;
-    margin-left: -8%;
-
-    width: 81%;
-    height: 10%;
+    width: 80vw;
+    height: 8vh;
 
     border-radius: 1.5vw;
     border: 0.1vw solid black;
@@ -400,13 +398,10 @@ body {
 
 
 .seccion3__segundacapa__cajaitems2 {
-  
-    margin-top: 2%;
-    margin-left: -8%;
 
-    width: 81%;
-    height: 10%;
-
+    width: 80vw;
+    height: 8vh;
+    
     border-radius: 1.5vw;
     border: 0.1vw solid black;
 
@@ -423,11 +418,8 @@ body {
 
 .seccion3__segundacapa__cajaitems3 {
       
-    margin-top: 2%;
-    margin-left: -8%;
-
-    width: 81%;
-    height: 10%;
+    width: 80vw;
+    height: 8vh;
 
     border-radius: 1.5vw;
     border: 0.1vw solid black;
@@ -445,14 +437,10 @@ body {
 
 
 
-/*
+
 .seccion3__segundacapa__cajaitems4 {
-
-    margin-top: 2%;
-    margin-left: -8%;
-
-    width: 81%;
-    height: 10%;
+    width: 80vw;
+    height: 8vh;
 
     border-radius: 1.5vw;
     border: 0.1vw solid black;
@@ -469,11 +457,8 @@ body {
 }
 
 .seccion3__segundacapa__cajaitems5 {
-    margin-top: 2%;
-    margin-left: -8%;
-
-    width: 81%;
-    height: 10%;
+    width: 80vw;
+    height: 8vh;
 
     border-radius: 1.5vw;
     border: 0.1vw solid black;
@@ -489,87 +474,41 @@ body {
 
 }
 
-*/
+
 
 .item {
     font-family: "MyriadPro-Light";
     font-size: 1vw;
 }
 
-
-
-.seccion3__segundacapa__cajadelafranjanegra1 {
-    width: 3vw;
-    height: 3.8vw;
-
-    padding: 0.1vw;
-    margin-left: 79vw;
-    margin-top: 11.2vw;
-    gap: 0.5vw;
-
-    justify-content: center;
-    flex-direction: column;
-
-    position: fixed;
+.seccion3__segundacapa__contenedorcaja , .seccion3__segundacapa__contenedorcaja2  , .seccion3__segundacapa__contenedorcaja3 , .seccion3__segundacapa__contenedorcaja4 , .seccion3__segundacapa__contenedorcaja5 , .seccion3__segundacapa__contenedorcaja6 {
     display: flex;
+
+    width: 90vw;
+    height: 8vh;
+    margin-top: 2.5vh;
+    
+
 }
+
 
 
 
 .seccion3__segundacapa__cajadelafranjanegra2 {
 
-    width: 3vw;
+    width: 3.1vw;
     height: 3.8vw;
-
-    padding: 0.1vw;
-    margin-left: 79vw;
-    margin-top: 17.32vw;
+    margin-left: 1vw;
+    
     gap: 0.5vw;
 
     justify-content: center;
     flex-direction: column;
 
-    position: fixed;
     display: flex;
 
 }
 
-
-.seccion3__segundacapa__cajadelafranjanegra3 {
-
-    width: 3vw;
-    height: 3.8vw;
-
-    padding: 0.1vw;
-    margin-left: 79vw;
-    margin-top: 23.49vw;
-    gap: 0.5vw;
-
-    justify-content: center;
-    flex-direction: column;
-
-    position: fixed;
-    display: flex;
-
-}
-
-.seccion3__segundacapa__cajadelafranjanegra4 {
-
-    width: 3vw;
-    height: 3.8vw;
-
-    padding: 0.1vw;
-    margin-left: 79vw;
-    margin-top: 29.65vw;
-    gap: 0.5vw;
-
-    justify-content: center;
-    flex-direction: column;
-
-    position: fixed;
-    display: flex;
-
-}
 
 
 
@@ -579,7 +518,7 @@ body {
     background-color: black;
 
     width: 3.1vw;
-    height: 0.45vw;
+    height: 0.44vw;
 
     border-radius: 1vw;
 }
@@ -588,7 +527,7 @@ body {
     background-color: black;
     
     width: 3.1vw;
-    height: 0.45vw;
+    height: 0.42vw;
 
     border-radius: 1vw;
 }
@@ -597,25 +536,27 @@ body {
     background-color: black;
 
     width: 3.1vw;
-    height: 0.45vw;
+    height: 0.43vw;
 
     border-radius: 1vw;
 }
 
 
 
-/* BUTTON AÑADIR ELEMENTOS*/ 
+
 
 .seccion3__segundacapa__Button {
     background-color: rgba(255, 102, 0, 0.911);
 
+    position: relative;
+    left: -3.8vw;
+
     width: 15vw;
     height: 3.4vw;
 
+    margin: 5vh;
     border-radius: 2vw;
-
-    margin-top: 1.3vw;
-
+    margin-bottom: 2vw;
     cursor: pointer;
 }
 
@@ -633,6 +574,7 @@ body {
     background-color: rgb(255, 81, 0);
 }
 
+
 a {
     display: flex;
     align-items: center;
@@ -640,4 +582,79 @@ a {
     text-decoration: none;
 
     font-size: 1vw;
+}
+
+
+
+/* PORCENTAJE */
+@keyframes rellenar {
+    to {
+        stroke-dasharray: var(--porcentaje) 100;
+    }
+    
+}
+
+
+circle {
+    fill: none;
+    stroke: rgba(255, 0, 0, 0.895);
+
+    stroke-width: 5;
+    stroke-dasharray: 0 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+
+    animation: rellenar .40s linear forwards ;
+}
+
+
+
+.porcentajes {
+    position: relative;
+}
+
+.porcentajes span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.67rem;
+    font-family: "MyriadPro-Light";
+
+}
+
+
+
+.circlebuenos {
+    fill: none;
+    stroke: rgba(0, 255, 26, 0.679);
+
+    stroke-width: 5;
+    stroke-dasharray: 0 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+
+    animation: rellenar .40s linear forwards ;
+}
+
+
+.circlemediano {
+    fill: none;
+    stroke: rgb(245, 188, 0);
+
+    stroke-width: 5;
+    stroke-dasharray: 0 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+
+    animation: rellenar .40s linear forwards ;
 }
