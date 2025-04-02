@@ -678,3 +678,12 @@ circle {
 
     animation: rellenar .40s linear forwards ;
 }
+@media only screen and (max-width: 430px) {
+    
+    .seccion2__foto {
+        width: 13.598vw;
+        height: 87.209vw;
+    }
+
+
+  }
