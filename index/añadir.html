@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title> Kario Media PM </title>
+    <link rel="stylesheet" href="../style/añadir.css">
+</head>
+
+<body>
+
+            <!-- OPCIONES DE AÑADIR , REFRESCAR , ELIMINAR , REPORTAR Y AYUDA , ETC -->
+
+
+            <div class="seccion4__opciones">
+
+                <!-- OPCION AÑADIR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/Añadir.svg" class="seccion4__añadir" />
+                <p class="seccion4_textoAñadir"> Añadir</p>
+    
+                <!-- OPCION REFRESCAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/Refrescar.svg" class="seccion4__refrescar" />
+                <p class="seccion4_textoRefrescar"> Refrescar</p>
+    
+                <!-- OPCION ELIMINAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/borrar.svg" class="seccion4__eliminar" />
+                <p class="seccion4_textoEliminar"> Eliminar</p>
+    
+                <!-- LOGO DE LA PAGINA PA Q SE VEA WONITOP-->
+                <img src="../objet/logo.svg" class="seccion4__logo">
+    
+                <!-- OPCION REPORTAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/reportar.svg" class="seccion4__reportar">
+                <p class="seccion4_textoReportar"> Reportar</p>
+    
+                <!-- OPCION AYUDAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/ayuda.svg" class="seccion4__ayuda">
+                <p class="seccion4_textoAyuda"> Ayuda</p>
+    
+                <!-- OPCION CONFIGURAR , NOTIFICACION , FOTO CON LA IMAGEN-->
+                <img src="../objet/CONFIGURACION.svg" class="seccion4__configuracion">
+                <img src="../objet/notificacion.svg" class="seccion4__notificacion">
+                <img src="../objet/pedrito.png" class="seccion4__foto">
+    
+            </div>
+
+            <div class="seccion4__blanco">
+ 
+                <div class="seccion4__texto1"> Añadir Nuevo Indicador </div>
+                <div class="seccio4__texto2">Nombre del Indicador</div>
+                <div class="seccion4__inputTexto2"><input type="text"> </div>
+                <div class="seccion4__texto3">Descripción</div>
+                <div class="seccion4__inputTexto3"> <textarea name="descripcion" placeholder="Pon la descripcion de tu indicador aqui"></textarea> </div>
+                <div class="seccion4__texto4">Categoría</div>
+                <select>
+                    <option value="0" selected disabled>Seleccione la categoria:</option>
+                    <option value="1">Baja</option>
+                    <option value="2">Media</option>
+                    <option value="3">Alta</option>
+                  </select>
+                
+                <div class="seccion4__texto5">Fecha de Inicio</div>
+                <div class="datetime1"><input type="date" name="fecha"></div>
+                <div class="seccion4__texto6">Fecha de Fin</div>
+                <div class="datetime2"><input type="date" name="fecha"></div>
+                  
+                <div class="seccion4__texto7">Fórmula</div>
+                <div class="seccion4__inputTexto7"><input type="text"> </div>
+                
+                <div class="seccion4__texto8">Frecuencia</div>
+                <div class="seccion4__inputTexto8"><input type="text"> </div>
+                
+                <div class="seccion4__texto9">Cumplimiento (%)</div>
+                <div class="seccion4__inputTexto9">  
+                    <input type="range" min="0" max="100" value="0" id="rangeInput" oninput="rangeValue.value = this.value">
+                    <output id="rangeValue">0</output>
+                </div>
+               
+
+                <div class="seccion4__texto10"> Área </div>
+                <div class="seccion4__inputTexto10"><input type="text"> </div>
+
+                <button class="seccion4__button1">Cancelar</button>
+                <button class="seccion4__button2">Guardar</button>
+
+            </div>
+
+</body>
+
+</html>

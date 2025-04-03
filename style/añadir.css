@@ -1,0 +1,412 @@
+html , body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* FUENTES DE LA PAGINA WEB */
+
+
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.otf) format(truetype);
+
+}
+
+@font-face {
+    font-family: "MyriadPro-REGULAR";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format(truetype);
+
+}
+
+
+
+
+/* SECION OPCIONES PARTE SUPERIOR */
+/*_-------------------------------------------------------------_*/
+
+/* ESPACIO DONDE ESTA LAS OPCIONES <DIV>  */
+.seccion4__opciones {
+
+    border-bottom: 0.1vh solid #5e5d5d8b;
+
+    position: fixed;
+
+    height: 8%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* IMAGENES DE LAS OPCIONES */
+
+.seccion4__añadir ,.seccion4__refrescar ,.seccion4__eliminar ,.seccion4__reportar ,.seccion4__ayuda {
+
+    width: 36%;
+    height: 36%;
+    margin-left: 2%;
+
+}
+
+/*_-------------------------------------------------------------_*/
+
+/* TEXTOS DE LAS OPCIONES */
+
+.seccion4_textoAñadir , .seccion4_textoRefrescar , .seccion4_textoEliminar , .seccion4_textoReportar , .seccion4_textoAyuda {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.1vw;
+    margin-left: -4.2%;
+}
+
+/*_-------------------------------------------------------------_*/
+
+/*  CONFIGURACIONES DE LAS IMAGENES DE LAS OPCIONES */
+
+/* ANIMACIONES PARA EL LOGO */
+
+    @keyframes --turn {
+        0% {transform: scaleX(1);} 100% {transform: scaleX(-1);}
+    }
+
+    @keyframes --turnBack {
+        0% {transform: scaleX(-1);} 100% {transform: scaleX(1);}
+    }
+
+.seccion4__logo {
+    margin-left: 15%;
+    height: 2vw;
+    animation: --turn .3s forwards;
+}
+
+.seccion4__logo:hover {
+    animation: --turnBack .3s forwards;
+}
+
+
+
+/* APARTADO DE REPORTAR */
+
+.seccion4__reportar {
+    margin-left: 10%;
+}
+
+/* configuracion notificaciones y foto */
+
+.seccion4__configuracion {
+    margin-left: 5%;
+}
+
+.seccion4__notificacion {
+    margin-left: -0.5%;
+}
+
+.seccion4__configuracion , .seccion4__notificacion {
+    width: 10%;
+    height: 28%;
+}
+
+.seccion4__foto {
+    width: 10%;
+    height: 80%;
+
+    margin-left: 0.5%;
+    margin-right: 4%;
+}
+
+
+.seccion4_textoAñadir {
+    border-bottom: 0.20vw solid;
+    border-image: linear-gradient(to right, rgb(0, 0, 0), black, rgb(0, 0, 0));
+    border-image-slice: 1;
+    box-shadow: 0vh 5vh 10vh rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* BLOQUE DE AÑADIR */
+
+
+.seccion4__blanco {
+    width: 80vw;
+    height: 80vh;
+    
+    position: relative;
+    top: 12.5vh;
+    left: 10vw;
+
+
+    border: 0.2vh solid black;
+    border-radius: 5vh;
+    box-shadow: 0.5vw 0.5vw 0.1vw rgba(76, 76, 76, 0.5);
+    padding-left: 5vh ;
+    padding-top: 1vh;
+}
+
+
+
+.seccion4__texto1 {
+    font-size: 3vh;
+    font-family: "MyriadPro-REGULAR";
+    font-weight: 500;
+    color: rgb(185, 68, 25);
+    text-align: center;
+    margin-bottom: 1vh;
+
+}
+
+
+
+.seccio4__texto2, .seccion4__texto3, .seccion4__texto4,
+.seccion4__texto5, .seccion4__texto6, .seccion4__texto7,
+.seccion4__texto8, .seccion4__texto9, .seccion4__texto10 {
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    font-family: "MyriadPro-REGULAR";
+    font-weight: 500;
+    color: rgb(185, 68, 25);
+}
+
+
+.seccion4__inputTexto2 input {
+    height: 5vh;
+    width: 77vw;
+    font-size: 2vh;
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    margin-bottom: 1.2vh;
+
+    line-height: normal;
+
+}
+
+.seccion4__inputTexto3 textarea {
+    height: 10vh;
+    width: 77vw;
+    resize: none;
+    overflow: auto;
+    font-size: 2vh;
+
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    margin-bottom: 1.2vh;
+}
+
+select {
+    height: 5vh;
+    width: 77vw;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    margin-bottom: 1.5vh;
+
+}
+
+.seccion4__texto6 {
+    position: relative;
+    top: -9.5vh;
+    left: 40vw;
+}
+.datetime1 input{
+    height: 5vh;
+    width: 35vw;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    margin-bottom: 1.2vh;
+}
+
+.datetime2 input{
+    height: 5vh;
+    width: 37vw;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+
+    position: relative;
+    top: -9.8vh;
+    left: 40vw;
+
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    margin-bottom: 1.2vh;
+}
+
+
+.seccion4__texto7 {
+    position: relative;
+    top: -9vh;
+}
+
+.seccion4__inputTexto7 input {
+    height: 5vh;
+    width: 35vw;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+
+    position: relative;
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    top: -8.7vh;
+    
+}
+
+.seccion4__texto8 {
+    position: relative;
+    top: -17.5vh;
+    left: 40vw;
+}
+
+.seccion4__inputTexto8 input {
+    height: 5vh;
+    width: 37vw;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+
+    position: relative;
+    top: -17.1vh;
+    left: 40vw;
+}
+
+.seccion4__texto9 {
+    position: relative;
+    top: -14vh;
+}
+
+.seccion4__inputTexto9 {
+    height: 8vh;
+    width: 40vw;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+
+    position: relative;
+    top: -12vh;
+    
+}
+
+output {
+    min-width: 1vh;
+    text-align: center;
+    background: rgb(255, 141, 100);
+    color: white;
+    padding: 0.9vh 0.9vw;
+    border: 0.1vh solid rgba(249, 91, 38, 0.463);
+    border-radius: 1vh;
+}
+
+input[type="range"] {
+
+    -webkit-appearance: none;
+    appearance: none;
+    width: 31vw;
+    height: 1.5vh;
+    background: #b4b4b4;
+    border: 0.10vh solid rgba(0, 0, 0, 0.254);
+    border-radius: 1vh;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0.1vw 0.2vw 0.2vw rgba(76, 76, 76, 0.5);
+
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2vw;
+    height: 4vh;
+    background: rgb(252, 133, 89);
+    border-radius: 2vh;
+    border: 0.10vh solid rgba(0, 0, 0, 0.254);
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0.1vw 0.2vw 0.1vw rgba(76, 76, 76, 0.5);
+
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+.seccion4__texto10 {
+    position: relative;
+    top: -25.5vh;
+    left: 40.2vw;
+}
+
+
+.seccion4__inputTexto10 input {
+    height: 5vh;
+    width: 37vw;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR";
+
+    border: 0.2vh solid black;
+    border-radius: 1.5vh;
+    box-shadow: 0.3vw 0.2vw 0.001vw rgba(76, 76, 76, 0.5);
+    position: relative;
+    top: -25.3vh;
+    left: 40vw;
+
+}
+
+
+.seccion4__button1, .seccion4__button2 {
+    position: relative;
+    top: -22vh;
+    left: 30vw;
+    box-shadow: 0.1vw 0.2vw 0.1vw rgba(76, 76, 76, 0.5);
+
+}
+
+
+
+.seccion4__button1 {
+
+    width: 6vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR" ;
+    border: 0.3vh solid rgb(255, 98, 0);
+    border-radius: 1.5vh;
+    background-color: rgb(255, 129, 75);
+    color: white;
+    
+}
+
+.seccion4__button2 {
+
+    width: 6vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-family: "MyriadPro-REGULAR" ;
+    border: 0.3vh solid rgb(255, 98, 0);
+    border-radius: 1.5vh;
+    background: linear-gradient(135deg, rgb(245, 122, 74) 0%, rgb(245, 134, 100) 100%);;
+    color: white;
+    
+}

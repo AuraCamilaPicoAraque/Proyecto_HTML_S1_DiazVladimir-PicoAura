@@ -105,9 +105,9 @@ body {
 /* Imagen del logo */
 
 .seccion1_login img {
-    width: 16%;
-    height: 16%;
-    margin-top: -6%;
+    width: 10vw;
+    height: 10vh;
+    margin-top: -1%;
     margin-bottom: 1%;
 }
 
@@ -119,7 +119,7 @@ body {
 .seccion1__texto1 {
     margin-top: 1%;
 
-    font-family: MyriadPro-REGULAR;
+    font-family:MyriadPro-REGULAR ;
     font-size: 2vw;
 
     margin-top: 1%;
@@ -132,40 +132,42 @@ body {
     font-size: 0.9vw;
 
     margin-top: -1.9%;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
+    text-align: center;
 
     color: #707070;
 }
 
 /* -- TEXTO DE USUARIO  ---- */
 
-.seccion1__textoU {
+.seccion1__textoU p {
 
-    font-family: MyriadPro-Light;
     font-size: 1.1vw;
     font-weight:lighter;
 
-    margin-top: -1%;
-    margin-bottom: 5%;
-    margin-left: -55%;
-
     color: #000000b0;
 }
+
+.seccion1__textoU {
+    font-family: "MyriadPro-Light";
+    margin-bottom: 1%;
+}
+
 
 /* -- TEXTO DE CONTRASEÑA  ---- */
 
-.seccion1__textoC {
-
-    font-family: MyriadPro-Light;
+.seccion1__textoC p {
     font-size: 1.1vw;
     font-weight:lighter;
 
-    margin-top: 2%;
-    margin-bottom: 4%;
-    margin-left: -55%;
-
     color: #000000b0;
 }
+
+.seccion1__textoC {
+    margin-bottom: 1%;
+    font-family: "MyriadPro-Light";
+}
+
 
 /* -- TEXTO DE PROBLEMAS  ---- */
 
@@ -174,6 +176,8 @@ body {
     font-family: MyriadPro-Light;
     font-size: 0.75vw;
     font-weight:lighter;
+    
+    text-align: center;
 
 }
 
@@ -192,7 +196,7 @@ body {
     border-radius: 1vw;
     border: 0.1vw solid #707070b4;
 
-    margin-top: -6%;
+    margin-top: 1%;
     margin-left: 1%;  
 }
 
@@ -205,7 +209,7 @@ body {
     border-radius: 1vw;
     border: 0.1vw solid #707070b4;
 
-    margin-top: -4%;
+    margin-top: 1%;
     margin-left: 1%;  
     margin-bottom: 2%;
 }
@@ -220,7 +224,7 @@ body {
 
     border-radius: 2vw;
 
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 3%;
     cursor: pointer;
 
@@ -257,6 +261,10 @@ input:focus {
     outline-width: 0;
 }
 
+
+
+
+/* APARTADO DE MEDI QUERY*/
 
 
 @media only screen and (max-width: 430px) {
@@ -319,12 +327,28 @@ input:focus {
             height: 10vh;
             margin-top: 20px ;
             margin-bottom: 0px ;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
         }
          .seccion1__texto1{
-            font-size: 10vw;
+            font-size: 20px;
+            margin-bottom: 10px;
          }
+        .seccion1__texto2{
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .seccion1__textoU  {
 
-
-
+            font-size:15px;
+            color: #000000;
+            margin-bottom: 20px;
+            background-color: #ffffff;
     }
+    .seccion1__textoC  {
+
+        font-size: 15px;
+        color: #000000;
+        background-color: #ffffff;
+    }}
