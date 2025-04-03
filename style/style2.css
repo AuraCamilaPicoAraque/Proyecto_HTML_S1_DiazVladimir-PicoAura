@@ -84,7 +84,7 @@ body {
 
 .seccion2_Bienvenido {
 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
     display: flex;
 
@@ -171,7 +171,7 @@ body {
 
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex; 
     flex-direction: column;
 
@@ -679,12 +679,201 @@ circle {
 
     animation: rellenar .40s linear forwards ;
 }
+.seccion3__textlog_cel{
+    display: none;
+}
+.seccion3__busqueda{
+    display: none;
+}
+
+
 @media only screen and (max-width: 430px) {
+    body {
+        background: url('../img/fondotelefono.svg');
+        background-color: black;
+        background-repeat: no-repeat;
     
+        background-size: 430px 932px;
+        background-position: 60% 32%;
+    
+        padding: 0;
+        margin: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        overflow: hidden;
+    }
+    .seccion2_Bienvenido {
+
+        background-color: white;
+    
+        display: flex;
+    
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        position: relative;    
+    
+        width: 85% ;
+        height: 50% ;
+        
+        border-radius: 2rem;
+    
+        overflow: auto;
+    
+        animation: blink2 2s ease-in-out forwards;
+    }
     .seccion2__foto {
-        width: 13.598vw;
-        height: 87.209vw;
+        width: 15%;
+        height: 9vh;
+    }
+    .seccion3__opciones {
+
+        border-bottom: 1.9px solid #5e5d5d8b;
+    
+        position: fixed;
+    
+        height: 43px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; 
+        align-items: center;
+    
+        overflow: hidden;
+    }
+    .seccion3__añadir ,.seccion3__refrescar ,.seccion3__eliminar ,.seccion3__reportar ,.seccion3__ayuda {
+
+        width: 0%;
+        height: 0%;
+        margin-left: 4%;
+    
+    }
+    .seccion3_textoAñadir , .seccion3_textoRefrescar , .seccion3_textoEliminar , .seccion3_textoReportar , .seccion3_textoAyuda {
+        font-family: "MyriadPro-REGULAR" ;
+        font-size: 0vw;
+        margin-left: -4.2%;
+    }
+
+    .seccion3__segundacapa__PanelIndicadores {
+        margin-top: 15%;
+    
+        width: 103vw;
+    
+        display: flex;
+        position: relative;
+    
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: baseline;
+    
+        overflow: auto;
+    
+    }
+    .seccion3__configuracion {
+        margin-left: 5%;
+    }
+    
+    .seccion3__notificacion {
+        margin-left: -0.5%;
+    }
+    
+    .seccion3__configuracion , .seccion3__notificacion {
+        width: 0%;
+        height: 0%;
+    }
+    
+    .seccion3__foto {
+        width: 0%;
+        height: 0%;
+    
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .seccion3__logo {
+        margin-left: 4%;
+        height: 3vh;
+        animation: --turn .3s forwards;
+        opacity: 70%;
+    }
+    .seccion3__textlog_cel{
+        display: flex;
+        font-family: "MyriadPro-REGULAR" ;
+        font-size: 4vw;
+        margin-left: 1%;
+    }
+    .seccion3__busqueda{
+        display: flex;
+        margin-left: 50%;  
+    }
+    .seccion3__segundacapa__franjanegra2 {
+        background-color: rgb(0, 0, 0);
+        top: 4px;
+        width: 3.1vw;
+        height: 0.42vw;
+    
+        border-radius: 1vw;
     }
 
 
+
   }
+
+
+
+
+
+
+.seccion3__segundacapa__cajadelafranjanegra2 {
+
+    width: 2vw;
+    height: 0.22vh;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    gap: 0.5vw;
+
+    justify-content: center;
+    flex-direction: column;
+
+    display: flex;
+
+}
+
+
+
+
+
+
+.seccion3__segundacapa__franjanegrat1 {
+    background-color: black;
+
+    width: 3.1vw;
+    height: 0.24vh;
+    margin-top: 1vh;
+    border-radius: 1vw;
+}
+
+.seccion3__segundacapa__franjanegrat2 {
+    background-color: black;
+    margin-top: 0.5vh;
+    width: 3.1vw;
+    height: 0.22vh;
+
+    border-radius: 1vw;
+}
+
+.segundacapa__franjanegrat3 {
+    background-color: black;
+    margin-top: 1vh;
+    width: 3.1vw;
+    height: 0.23vh;
+
+    border-radius: 0.51vw;
+}
+
