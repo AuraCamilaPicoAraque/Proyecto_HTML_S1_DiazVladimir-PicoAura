@@ -14,7 +14,13 @@ Tabla de contenido
 
 # como ejecutar el proyecto 
 
-este proyecto se ejecutara mediante el link de la pagina 
+este proyecto se ejecutara mediante el link de la pagina.
+
+
+# Link de la maquetacion de la pagina web.
+
+[Maquetacion figma](https://www.figma.com/design/7VbCivw9zegIQNjVsX4KnY/filtro-html-1?node-id=74-201&p=f&t=RkxL24ZO1AZgp0s2-0)
+
 
 [link](https://auracamilapicoaraque.github.io/Proyecto_HTML_S1_DiazVladimir-PicoAura/)
 
