@@ -1,0 +1,554 @@
+html , body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* FUENTES DE LA PAGINA WEB */
+
+
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.otf) format(truetype);
+
+}
+
+@font-face {
+    font-family: "MyriadPro-REGULAR";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format(truetype);
+
+}
+
+
+
+
+/* SECION OPCIONES PARTE SUPERIOR */
+/*_-------------------------------------------------------------_*/
+
+/* ESPACIO DONDE ESTA LAS OPCIONES <DIV>  */
+.seccion4__opciones {
+
+    border-bottom: 0.1vh solid #5e5d5d8b;
+
+    position: fixed;
+
+    height: 8%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* IMAGENES DE LAS OPCIONES */
+
+.seccion4__añadir ,.seccion4__refrescar ,.seccion4__eliminar ,.seccion4__reportar ,.seccion4__ayuda {
+
+    width: 36%;
+    height: 36%;
+    margin-left: 2%;
+
+}
+
+/*_-------------------------------------------------------------_*/
+
+/* TEXTOS DE LAS OPCIONES */
+
+.seccion4_textoAñadir , .seccion4_textoRefrescar , .seccion4_textoEliminar , .seccion4_textoReportar , .seccion4_textoAyuda {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.1vw;
+    margin-left: -1%;
+}
+
+/*_-------------------------------------------------------------_*/
+
+/*  CONFIGURACIONES DE LAS IMAGENES DE LAS OPCIONES */
+
+/* ANIMACIONES PARA EL LOGO */
+
+    @keyframes --turn {
+        0% {transform: scaleX(1);} 100% {transform: scaleX(-1);}
+    }
+
+    @keyframes --turnBack {
+        0% {transform: scaleX(-1);} 100% {transform: scaleX(1);}
+    }
+
+.seccion4__logo {
+    margin-left: 15%;
+    height: 2vw;
+    animation: --turn .3s forwards;
+}
+
+.seccion4__logo:hover {
+    animation: --turnBack .3s forwards;
+}
+
+
+
+/* APARTADO DE REPORTAR */
+
+.seccion4__reportar {
+    margin-left: 10%;
+}
+
+/* configuracion notificaciones y foto */
+
+.seccion4__configuracion {
+    margin-left: 5%;
+}
+
+.seccion4__notificacion {
+    margin-left: -0.5%;
+}
+
+.seccion4__configuracion , .seccion4__notificacion {
+    width: 10%;
+    height: 28%;
+}
+
+.seccion4__foto {
+    width: 10%;
+    height: 80%;
+
+    margin-left: 0.5%;
+    margin-right: 4%;
+}
+
+
+.seccion4_textoEliminar {
+    border-bottom: 0.2vw solid;
+    border-image: linear-gradient(to right, rgb(0, 0, 0), black, rgb(0, 0, 0));
+    border-image-slice: 1;
+    box-shadow: 0vh 5vh 10vh rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/*_-------------------------------------------------------------_*/
+
+
+.seccion3__segundacapa__PanelIndicadores {
+    margin-top: 4.51%;
+
+    width: 103vw;
+
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: baseline;
+
+    overflow: auto;
+
+}
+
+.seccion3__segundacapa__texto1 {
+
+    margin-top: 0.5%;
+
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.7vw;
+    letter-spacing: 0.1%;
+}
+
+.seccion3__segundacapa__texto2 {
+    font-family: "MyriadPro-Light" ;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.736);
+    margin-top: -0.5%;
+}
+
+
+
+.seccion3__segundacapa__informacionPanel {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+    top: 2vh;
+    left: -5vw;
+    width: 101vw;
+    
+}
+
+.seccion3__segundacapa__informacionPanel p {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1vw;
+    
+}
+
+
+.seccion3__segundacapa__FechadeInicio , .seccion3__segundacapa__FechadeTerminaci , .seccion3__segundacapa__Formula , .seccion3__segundacapa__Frecuenci , .seccion3__segundacapa__Cumplimiento {
+    margin-left: -11vw;
+} 
+
+.seccion3__segundacapa__indicador {
+    margin-left: 3vw;
+}
+
+.seccion3__segundacapa__Descripcion {
+    margin-left: -6vw;
+}
+
+.seccion3__segundacapa__Categoria {
+    margin-left: -9vw;
+    margin-right: 2.4vw;
+}
+
+.seccion3__segundacapa__Area {
+    margin-left: -9vw;
+}
+
+
+.cajas {
+    margin-left: 4vw;
+}
+
+
+/*  CAJA ITEMS PARA LAS ESTAS DE OS EJEMPLOS */
+
+
+.seccion3__segundacapa__cajaitems {
+    
+    width: 80vw;
+    height: 8vh;
+    
+
+    border-radius: 1.5vw;
+    border: 0.1vw solid black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.16fr 0.10fr 0.13fr 0.09fr 0.14fr 0.07fr 0.09fr 0.1fr 0.1fr;
+    
+    overflow: hidden;
+}
+
+
+.seccion3__segundacapa__cajaitems1 {    
+  
+    width: 80vw;
+    height: 8vh;
+
+    border-radius: 1.5vw;
+    border: 0.1vw solid black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.16fr 0.10fr 0.13fr 0.09fr 0.14fr 0.07fr 0.09fr 0.1fr 0.1fr;
+    
+    overflow: hidden;
+}
+
+
+
+.seccion3__segundacapa__cajaitems2 {
+
+    width: 80vw;
+    height: 8vh;
+    
+    border-radius: 1.5vw;
+    border: 0.1vw solid black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.16fr 0.10fr 0.13fr 0.09fr 0.14fr 0.07fr 0.09fr 0.1fr 0.1fr;
+    
+    overflow: hidden;
+
+}
+
+.seccion3__segundacapa__cajaitems3 {
+      
+    width: 80vw;
+    height: 8vh;
+
+    border-radius: 1.5vw;
+    border: 0.1vw solid black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.16fr 0.10fr 0.13fr 0.09fr 0.14fr 0.07fr 0.09fr 0.1fr 0.1fr;
+    
+    overflow: hidden;
+
+}
+
+
+
+
+.seccion3__segundacapa__cajaitems4 {
+    width: 80vw;
+    height: 8vh;
+
+    border-radius: 1.5vw;
+    border: 0.1vw solid black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.16fr 0.10fr 0.13fr 0.09fr 0.14fr 0.07fr 0.09fr 0.1fr 0.1fr;
+    
+    overflow: hidden;
+
+}
+
+.seccion3__segundacapa__cajaitems5 {
+    width: 80vw;
+    height: 8vh;
+
+    border-radius: 1.5vw;
+    border: 0.1vw solid black;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 0.16fr 0.10fr 0.13fr 0.09fr 0.14fr 0.07fr 0.09fr 0.1fr 0.1fr;
+    
+    overflow: hidden;
+
+}
+
+
+
+.item {
+    font-family: "MyriadPro-Light";
+    font-size: 1vw;
+}
+
+.seccion3__segundacapa__contenedorcaja , .seccion3__segundacapa__contenedorcaja2  , .seccion3__segundacapa__contenedorcaja3 , .seccion3__segundacapa__contenedorcaja4 , .seccion3__segundacapa__contenedorcaja5 , .seccion3__segundacapa__contenedorcaja6 {
+    display: flex;
+
+    width: 90vw;
+    height: 8vh;
+    margin-top: 2.5vh;
+    
+
+}
+
+
+
+/*
+
+
+.seccion3__segundacapa__cajadelafranjanegra2 {
+    background-color: black;
+    width: 3.1vw;
+    height: 35vh;
+    margin-left: 1vw;
+    
+    gap: 0.5vw;
+
+    justify-content: center;
+    flex-direction: column;
+
+    display: flex;
+
+}
+
+
+
+.seccion3__segundacapa__franjanegra1 div {
+    background-color: black;
+
+    width: 3.1vw;
+    height: 0.44vh;
+
+    border-radius: 1vw;
+}
+
+.seccion3__segundacapa__franjanegra2 div {
+    background-color: black;
+    
+    width: 3.1vw;
+    height: 0.42vh;
+
+    border-radius: 1vw;
+}
+
+.seccion3__segundacapa__franjanegra3 div {
+    background-color: black;
+
+    width: 3.1vw;
+    height: 0.43vh;
+
+    border-radius: 1vw;
+}
+
+*/
+
+
+
+
+/* PORCENTAJE */
+@keyframes rellenar {
+    to {
+        stroke-dasharray: var(--porcentaje) 100;
+    }
+    
+}
+
+
+circle {
+    fill: none;
+    stroke: rgba(255, 0, 0, 0.895);
+
+    stroke-width: 5;
+    stroke-dasharray: 0 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+
+    animation: rellenar .40s linear forwards ;
+}
+
+
+
+.porcentajes {
+    position: relative;
+}
+
+.porcentajes span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.67rem;
+    font-family: "MyriadPro-Light";
+
+}
+
+
+
+.circlebuenos {
+    fill: none;
+    stroke: rgba(0, 255, 26, 0.679);
+
+    stroke-width: 5;
+    stroke-dasharray: 0 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+
+    animation: rellenar .40s linear forwards ;
+}
+
+
+.circlemediano {
+    fill: none;
+    stroke: rgb(245, 188, 0);
+
+    stroke-width: 5;
+    stroke-dasharray: 0 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+
+    animation: rellenar .40s linear forwards ;
+}
+
+
+
+
+/* SELECTORES INPUTS */
+
+
+.seccion3__Borrar__selector input {
+    width: 2vw;
+    height: 4vh;
+
+    position: relative;
+    top: 1.7vh;
+    left: 0.7vw;
+    box-shadow: 0.7vh 0.5vh 0.2vh rgba(158, 158, 158, 0.595);
+
+    appearance: none;
+    background-color: rgba(250, 149, 82, 0.883);
+    border: 2px solid #ef7721;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seccion3__Borrar__selector input:checked {
+    background-color: rgb(254, 177, 141); 
+    border: 2px solid #ff8e3d; 
+    position: relative;
+}
+
+
+.seccion3__Borrar__selector input:checked::after {
+    content: "✔";
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+
+    margin-left: 0.5vw;
+    transform: translate(-50%, -50%);
+}
+
+.seccion3__button {
+    width: 10vw;
+    height: 7vh;
+
+    font-family: "MyriadPro-REGULAR";
+    font-size: 1.9vh;
+
+    position: relative;
+    top: 4vh;
+    left: -2vw;
+
+    background-color: rgba(254, 117, 25, 0.867);
+    border: 2px solid #ef7721;
+    border-radius: 5px;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 1vh 1vh 0.2vh rgba(158, 158, 158, 0.787);
+
+}
+
+.seccion3__button a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
+}

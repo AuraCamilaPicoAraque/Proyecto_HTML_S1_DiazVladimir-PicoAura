@@ -60,7 +60,7 @@ html , body {
 .seccion4_textoAñadir , .seccion4_textoRefrescar , .seccion4_textoEliminar , .seccion4_textoReportar , .seccion4_textoAyuda {
     font-family: "MyriadPro-REGULAR" ;
     font-size: 1.1vw;
-    margin-left: -4.2%;
+    margin-left: -1%;
 }
 
 /*_-------------------------------------------------------------_*/
@@ -409,4 +409,11 @@ input[type="range"]::-webkit-slider-thumb:hover {
     background: linear-gradient(135deg, rgb(245, 122, 74) 0%, rgb(245, 134, 100) 100%);;
     color: white;
     
+}
+
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
 }

@@ -48,7 +48,7 @@ body {
     width: 20vw;
     height: 20vh;
 
-    opacity: 0;
+    opacity: 1;
     animation: blink 2s ease-in-out 1 forwards;
     animation-delay: 1.8s;
 }
@@ -228,7 +228,7 @@ body {
 .seccion3_textoAñadir , .seccion3_textoRefrescar , .seccion3_textoEliminar , .seccion3_textoReportar , .seccion3_textoAyuda {
     font-family: "MyriadPro-REGULAR" ;
     font-size: 1.1vw;
-    margin-left: -4.2%;
+    margin-left: -1%;
 }
 
 /*_-------------------------------------------------------------_*/
@@ -513,11 +513,13 @@ body {
 
 
 
+/*
+
 
 .seccion3__segundacapa__cajadelafranjanegra2 {
-
+    background-color: black;
     width: 3.1vw;
-    height: 3.8vw;
+    height: 35vh;
     margin-left: 1vw;
     
     gap: 0.5vw;
@@ -531,35 +533,34 @@ body {
 
 
 
-
-
-
-.seccion3__segundacapa__franjanegra1 {
+.seccion3__segundacapa__franjanegra1 div {
     background-color: black;
 
     width: 3.1vw;
-    height: 0.44vw;
+    height: 0.44vh;
 
     border-radius: 1vw;
 }
 
-.seccion3__segundacapa__franjanegra2 {
+.seccion3__segundacapa__franjanegra2 div {
     background-color: black;
     
     width: 3.1vw;
-    height: 0.42vw;
+    height: 0.42vh;
 
     border-radius: 1vw;
 }
 
-.seccion3__segundacapa__franjanegra3 {
+.seccion3__segundacapa__franjanegra3 div {
     background-color: black;
 
     width: 3.1vw;
-    height: 0.43vw;
+    height: 0.43vh;
 
     border-radius: 1vw;
 }
+
+*/
 
 
 
@@ -685,6 +686,65 @@ circle {
 .seccion3__busqueda{
     display: none;
 }
+
+
+
+
+.seccion3__segundacapa__cajadelafranjanegra2 {
+
+    width: 2vw;
+    height: 0.22vh;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    gap: 0.5vw;
+
+    justify-content: center;
+    flex-direction: column;
+
+    display: flex;
+
+}
+
+
+
+
+
+
+.seccion3__segundacapa__franjanegrat1 {
+    background-color: black;
+
+    width: 3.1vw;
+    height: 0.24vh;
+    margin-top: 1vh;
+    border-radius: 1vw;
+}
+
+.seccion3__segundacapa__franjanegrat2 {
+    background-color: black;
+    margin-top: 0.5vh;
+    width: 3.1vw;
+    height: 0.22vh;
+
+    border-radius: 1vw;
+}
+
+.segundacapa__franjanegrat3 {
+    background-color: black;
+    margin-top: 1vh;
+    width: 3.1vw;
+    height: 0.23vh;
+
+    border-radius: 0.51vw;
+}
+
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
+}
+
+
 
 
 @media only screen and (max-width: 430px) {
@@ -826,54 +886,4 @@ circle {
   }
 
 
-
-
-
-
-.seccion3__segundacapa__cajadelafranjanegra2 {
-
-    width: 2vw;
-    height: 0.22vh;
-    margin-left: 1vw;
-    margin-top: 1vw;
-    gap: 0.5vw;
-
-    justify-content: center;
-    flex-direction: column;
-
-    display: flex;
-
-}
-
-
-
-
-
-
-.seccion3__segundacapa__franjanegrat1 {
-    background-color: black;
-
-    width: 3.1vw;
-    height: 0.24vh;
-    margin-top: 1vh;
-    border-radius: 1vw;
-}
-
-.seccion3__segundacapa__franjanegrat2 {
-    background-color: black;
-    margin-top: 0.5vh;
-    width: 3.1vw;
-    height: 0.22vh;
-
-    border-radius: 1vw;
-}
-
-.segundacapa__franjanegrat3 {
-    background-color: black;
-    margin-top: 1vh;
-    width: 3.1vw;
-    height: 0.23vh;
-
-    border-radius: 0.51vw;
-}
 

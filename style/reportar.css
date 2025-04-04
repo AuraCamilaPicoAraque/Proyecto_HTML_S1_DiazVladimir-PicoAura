@@ -1,0 +1,331 @@
+html , body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* FUENTES DE LA PAGINA WEB */
+
+
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.otf) format(truetype);
+
+}
+
+@font-face {
+    font-family: "MyriadPro-REGULAR";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format(truetype);
+
+}
+
+
+
+
+/* SECION OPCIONES PARTE SUPERIOR */
+/*_-------------------------------------------------------------_*/
+
+/* ESPACIO DONDE ESTA LAS OPCIONES <DIV>  */
+.seccion4__opciones {
+
+    border-bottom: 0.1vh solid #5e5d5d8b;
+
+    position: fixed;
+
+    height: 8%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* IMAGENES DE LAS OPCIONES */
+
+.seccion4__añadir ,.seccion4__refrescar ,.seccion4__eliminar ,.seccion4__reportar ,.seccion4__ayuda {
+
+    width: 36%;
+    height: 36%;
+    margin-left: 2%;
+
+}
+
+/*_-------------------------------------------------------------_*/
+
+/* TEXTOS DE LAS OPCIONES */
+
+.seccion4_textoAñadir , .seccion4_textoRefrescar , .seccion4_textoEliminar , .seccion4_textoReportar , .seccion4_textoAyuda {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.1vw;
+    margin-left: -1%;
+}
+
+/*_-------------------------------------------------------------_*/
+
+/*  CONFIGURACIONES DE LAS IMAGENES DE LAS OPCIONES */
+
+/* ANIMACIONES PARA EL LOGO */
+
+    @keyframes --turn {
+        0% {transform: scaleX(1);} 100% {transform: scaleX(-1);}
+    }
+
+    @keyframes --turnBack {
+        0% {transform: scaleX(-1);} 100% {transform: scaleX(1);}
+    }
+
+.seccion4__logo {
+    margin-left: 15%;
+    height: 2vw;
+    animation: --turn .3s forwards;
+}
+
+.seccion4__logo:hover {
+    animation: --turnBack .3s forwards;
+}
+
+
+
+/* APARTADO DE REPORTAR */
+
+.seccion4__reportar {
+    margin-left: 10%;
+}
+
+/* configuracion notificaciones y foto */
+
+.seccion4__configuracion {
+    margin-left: 5%;
+}
+
+.seccion4__notificacion {
+    margin-left: -0.5%;
+}
+
+.seccion4__configuracion , .seccion4__notificacion {
+    width: 10%;
+    height: 28%;
+}
+
+.seccion4__foto {
+    width: 10%;
+    height: 80%;
+
+    margin-left: 0.5%;
+    margin-right: 4%;
+}
+
+
+
+.seccion4_textoReportar {
+    border-bottom: 0.2vw solid black;
+    box-shadow: 0.0vh 0.5vh 0.5vh rgb(206, 206, 206);
+}
+
+
+
+
+
+/*_-------------------------------------------------------------_*/
+
+
+.seccion3__segundacapa__PanelIndicadores {
+    margin-top: 4.51%;
+
+    width: 103vw;
+
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: baseline;
+
+    overflow: auto;
+
+}
+
+.seccion3__segundacapa__texto1 {
+
+    margin-top: 0.5%;
+
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1.7vw;
+    letter-spacing: 0.1%;
+}
+
+.seccion3__segundacapa__texto2 {
+    font-family: "MyriadPro-Light" ;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.736);
+    margin-top: -0.5%;
+}
+
+
+
+.seccion3__segundacapa__informacionPanel {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+    top: 2vh;
+    left: -5vw;
+    width: 101vw;
+    
+}
+
+.seccion3__segundacapa__informacionPanel p {
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 1vw;
+    
+}
+
+
+.seccion3__segundacapa__FechadeInicio , .seccion3__segundacapa__FechadeTerminaci , .seccion3__segundacapa__Formula , .seccion3__segundacapa__Frecuenci , .seccion3__segundacapa__Cumplimiento {
+    margin-left: -11vw;
+} 
+
+.seccion3__segundacapa__indicador {
+    margin-left: 3vw;
+}
+
+.seccion3__segundacapa__Descripcion {
+    margin-left: -6vw;
+}
+
+.seccion3__segundacapa__Categoria {
+    margin-left: -9vw;
+    margin-right: 2.4vw;
+}
+
+.seccion3__segundacapa__Area {
+    margin-left: -9vw;
+}
+
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
+}
+
+
+
+
+
+/* APARTADO DE REPORTAR , DIV NUEVOS Y ETC */
+
+
+.seccion4__Reportar__agrupacionprincipal {
+    width: 100vw;
+    height: 92vh;
+    position: relative;
+    top: 8vh;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 4vh 1.5vh 1.5vh 1.5vh;
+}
+
+
+.seccion4__Reportar__texto1 {
+    font-family: "MyriadPro-REGULAR";
+    font-size: 3.5vh;
+    margin-bottom: 2vh;
+}
+
+.seccion4__Reportar__texto2 {
+    font-family: "MyriadPro-REGULAR";
+    font-size: 2.5vh;
+    margin-bottom: 8vh;
+}
+
+
+textarea {
+    width: 45vw;
+    height: 50vh;  
+
+    font-family: "MyriadPro-Light" ;
+    font-size: 3vh;
+
+    padding: 1vh;
+    border-radius: 1.5vh;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    resize: none;
+
+    position: relative;
+    left: 28vw;
+}
+
+textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0.5vh 0.5vh 0.1vh rgba(250, 110, 55, 0.617);
+}
+
+
+button {
+    width: 9vw;
+    height: 5vh;
+
+    font-family: "MyriadPro-REGULAR" ;
+    font-size: 2.5vh;
+
+    background-color: rgb(251, 133, 60);
+    border: 0.3vh solid rgba(255, 71, 9, 0.837);
+    border-radius: 1vh;
+    color: rgb(213, 213, 213);
+
+    position: relative;
+    top: 8vh;
+    left: 80vw;
+
+}
+
+
+/* IMAGENES DE DECORACION PARA EL FONDO*/
+
+.objetodedecoracion1 {
+    width: 9vw;
+    height: 9vh;
+
+    position: relative;
+    top: 1vh;
+    left: 27vw;
+}
+
+.objetodedecoracion2 {
+    width: 50vw;
+    height: 40vh;
+
+    position: fixed;
+    top: 60vh;
+    left: -16vw;
+}
+
+
+.objetodedecoracion3 {
+    width: 45vw;
+    height: 35vh;
+
+    position: fixed;
+    top: 8vh;
+    left: 70vw;
+}
+
+
+
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    font-family: inherit; 
+}

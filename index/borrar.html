@@ -1,79 +1,50 @@
 <html>
-
 <head>
     <title> Kario Media PM </title>
-    <link rel="stylesheet" href="../style/style2.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">0
+    <link rel="stylesheet" href="../style/borrar.css">
 </head>
 
 <body>
 
-    <!--  LOGO DE LA PAGINA Y INICIO -->
-    <div><img src="../img/vector.svg" class="vector"> </div>
-
-    <!-- SECCION DE ACCESO CONCEDIDO......  -->
-    <div class="seccion2_Bienvenido">
+            <!-- OPCIONES DE AÑADIR , REFRESCAR , ELIMINAR , REPORTAR Y AYUDA , ETC -->
 
 
-        <div class="seccion2__fondoblanco"></div>
-        <img class="seccion2__logo" src="../img/vectorconmedia.svg" />
+            <div class="seccion4__opciones">
+
+                <!-- OPCION AÑADIR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/Añadir.svg" class="seccion4__añadir" />
+                <a href="../index/añadir.html"><p class="seccion4_textoAñadir"> Añadir</p></a> 
+    
+                <!-- OPCION REFRESCAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/Refrescar.svg" class="seccion4__refrescar" />
+                <p class="seccion4_textoRefrescar"> Refrescar</p>
+    
+                <!-- OPCION ELIMINAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/borrar.svg" class="seccion4__eliminar" />
+                <a href="../index/borrar.html"> <p class="seccion4_textoEliminar"> Eliminar</p> </a> 
+    
+                <!-- LOGO DE LA PAGINA PA Q SE VEA WONITOP-->
+                <a href="../index/index2.html"><img src="../objet/logo.svg" class="seccion4__logo"></a>
+    
+                <!-- OPCION REPORTAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/reportar.svg" class="seccion4__reportar">
+                <a href="../index/reportar.html"><p class="seccion4_textoReportar"> Reportar</p> </a> 
+    
+                <!-- OPCION AYUDAR CON LA IMAGEN Y TEXTO-->
+                <img src="../objet/ayuda.svg" class="seccion4__ayuda">
+                <a href="../index/ayuda.html"> <p class="seccion4_textoAyuda"> Ayuda</p> </a> 
+    
+                <!-- OPCION CONFIGURAR , NOTIFICACION , FOTO CON LA IMAGEN-->
+                <img src="../objet/CONFIGURACION.svg" class="seccion4__configuracion">
+                <img src="../objet/notificacion.svg" class="seccion4__notificacion">
+                <img src="../objet/pedrito.png" class="seccion4__foto">
+    
+            </div>
 
 
-        <!-- TEXTOS ACCESO CONCEBIDO -->
-
-        <P class="seccion2__texto1"> Bienvenido de nuevo</P>
-        <img src="../img/pedrito.png" class="seccion2__foto" />
-        <p class="seccion2__texto2"> Pedro Felipe Gómez Bonilla</p>
-        <p class="seccion2__texto3"> Usuario Administrador </p>
-
-    </div>
 
 
-    <div class="seccion3_PanelPrincipal">
-
-        <!-- OPCIONES DE AÑADIR , REFRESCAR , ELIMINAR , REPORTAR Y AYUDA , ETC -->
-
-
-        <div class="seccion3__opciones">
             
-
-            <!-- OPCION AÑADIR CON LA IMAGEN Y TEXTO-->
-            <img src="../objet/Añadir.svg" class="seccion3__añadir" />
-            <a href="../index/añadir.html"><p class="seccion3_textoAñadir"> Añadir</p></a>
-
-            <!-- OPCION REFRESCAR CON LA IMAGEN Y TEXTO-->
-            <img src="../objet/Refrescar.svg" class="seccion3__refrescar" />
-            <p class="seccion3_textoRefrescar"> Refrescar</p>
-
-            <!-- OPCION ELIMINAR CON LA IMAGEN Y TEXTO-->
-            <img src="../objet/borrar.svg" class="seccion3__eliminar" />
-            <a href="../index/borrar.html"><p class="seccion3_textoEliminar"> Eliminar</p></a>
-
-            <!-- LOGO DE LA PAGINA PA Q SE VEA WONITOP-->
-            <img src="../objet/logo.svg" class="seccion3__logo"> 
-
-            <!-- OPCION texto logo-->
-            <div class="seccion3__textlog_cel"><p>KARIO Media</p></div>
-
-            <!-- OPCION de IMAGEN de busqueda-->
-            <img src="../img/busqueda 1.svg" class="seccion3__busqueda">
-
-
-            <!-- OPCION REPORTAR CON LA IMAGEN Y TEXTO-->
-            <img src="../objet/reportar.svg" class="seccion3__reportar">
-            <a href="../index/reportar.html"> <p class="seccion3_textoReportar"> Reportar</p> </a> 
-
-            <!-- OPCION AYUDAR CON LA IMAGEN Y TEXTO-->
-            <img src="../objet/ayuda.svg" class="seccion3__ayuda">
-            <p class="seccion3_textoAyuda"> Ayuda</p>
-
-            <!-- OPCION CONFIGURAR , NOTIFICACION , FOTO CON LA IMAGEN-->
-            <img src="../objet/CONFIGURACION.svg" class="seccion3__configuracion">
-            <img src="../objet/notificacion.svg" class="seccion3__notificacion">
-            <img src="../objet/pedrito.png" class="seccion3__foto">
-
-        </div>
-
         <!-- SEGUNDA CAPA PANEL DE INDICACDORES - PESTAÑA DE VISUALIZACION PARA EL ADMIN -->
 
         <div class="seccion3__segundacapa__PanelIndicadores">
@@ -126,11 +97,8 @@
 
                     </div>
 
-                    <!-- RAYASNEGRAS DE DECORACION PANEL DEINDICADORES -->
-                    <div class="seccion3__segundacapa__cajadelafranjanegra2">
-                        <div class="seccion3__segundacapa__franjanegra1"></div>
-                        <div class="seccion3__segundacapa__franjanegra2"></div>
-                        <div class="seccion3__segundacapa__franjanegra3"></div>
+                    <div class="seccion3__Borrar__selector">
+                            <input type="checkbox" />
                     </div>
 
                 </div>
@@ -163,12 +131,11 @@
                         <div class="item">Diseño</div>
                     </div>
 
-                    <!-- RAYASNEGRAS DE DECORACION PANEL DEINDICADORES -->
-                    <div class="seccion3__segundacapa__cajadelafranjanegra2">
-                        <div class="seccion3__segundacapa__franjanegra1"></div>
-                        <div class="seccion3__segundacapa__franjanegra2"></div>
-                        <div class="seccion3__segundacapa__franjanegra3"></div>
+
+                    <div class="seccion3__Borrar__selector">
+                        <input type="checkbox" />
                     </div>
+
                 </div>
 
 
@@ -199,12 +166,10 @@
                         <div class="item">Developers</div>
                     </div>
 
-                    <!-- RAYASNEGRAS DE DECORACION PANEL DEINDICADORES -->
-                    <div class="seccion3__segundacapa__cajadelafranjanegra2">
-                        <div class="seccion3__segundacapa__franjanegra1"></div>
-                        <div class="seccion3__segundacapa__franjanegra2"></div>
-                        <div class="seccion3__segundacapa__franjanegra3"></div>
+                    <div class="seccion3__Borrar__selector">
+                        <input type="checkbox" />
                     </div>
+
                 </div>
 
 
@@ -234,12 +199,12 @@
                         <div class="item">Gerencia</div>
                     </div>
 
-                    <!-- RAYASNEGRAS DE DECORACION PANEL DEINDICADORES -->
-                    <div class="seccion3__segundacapa__cajadelafranjanegra2">
-                        <div class="seccion3__segundacapa__franjanegra1"></div>
-                        <div class="seccion3__segundacapa__franjanegra2"></div>
-                        <div class="seccion3__segundacapa__franjanegra3"></div>
+
+                    <div class="seccion3__Borrar__selector">
+                        <input type="checkbox" />
                     </div>
+
+
                 </div>
 
 
@@ -269,12 +234,11 @@
                         <div class="item">Marketing</div>
                     </div>
 
-                    <!-- RAYASNEGRAS DE DECORACION PANEL DEINDICADORES -->
-                    <div class="seccion3__segundacapa__cajadelafranjanegra2">
-                        <div class="seccion3__segundacapa__franjanegra1"></div>
-                        <div class="seccion3__segundacapa__franjanegra2"></div>
-                        <div class="seccion3__segundacapa__franjanegra3"></div>
+
+                    <div class="seccion3__Borrar__selector">
+                        <input type="checkbox" />
                     </div>
+
                 </div>
 
 
@@ -304,32 +268,14 @@
                         <div class="item">Marketing</div>
                     </div>
 
-                    <!-- RAYASNEGRAS DE DECORACION PANEL DEINDICADORES -->
-                    <div class="seccion3__segundacapa__cajadelafranjanegra2">
-                        <div class="seccion3__segundacapa__franjanegra1"></div>
-                        <div class="seccion3__segundacapa__franjanegra2"></div>
-                        <div class="seccion3__segundacapa__franjanegra3"></div>
+                    <div class="seccion3__Borrar__selector">
+                        <input type="checkbox" />
                     </div>
+
                 </div>
 
-
-
-
-
-                <!-- APARTADO DE AÑADIR ELEMENTO -->
-
-                <a href="../index/añadir.html">
-                    <div class="seccion3__segundacapa__Button">
-                        <p>Añadir Elementos</p>
-                    </div>
-                </a>
-
-
-
-            </div>
-        </div>
-
-        
+                <button class="seccion3__button">
+                   <a href="./borrar.html"> Eliminar Indicador</a>
+                </button>
 </body>
-
 </html>
