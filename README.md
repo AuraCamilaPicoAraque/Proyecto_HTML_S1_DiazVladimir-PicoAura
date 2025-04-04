@@ -11,3 +11,11 @@ Tabla de contenido
 |1|Index.html| Codigo principal para el proyecto|
 |2|Style.css| Diseño de la pagina
 |3|Img| Imagenes utilizadas en la pagina|
+
+# como ejecutar el proyecto 
+
+este proyecto se ejecutara mediante el link de la pagina 
+
+[link](https://auracamilapicoaraque.github.io/Proyecto_HTML_S1_DiazVladimir-PicoAura/)
+
+elaborado por: Aura Camila Pico Araque y Vladimir Diaz Contreras 
